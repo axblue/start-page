@@ -1,6 +1,6 @@
 # Material start page
 
-#About
+## About
 
  Material start page is a replacement for the default Google Chrome new tab page.
 
