@@ -37,8 +37,9 @@ const Settings = ({ options, setOptions }) => {
       [name]: checked,
     });
   };
-  const handleChangeSlider = (event, name) => {
-    const value = event.target.value;
+  const handleChangeSlider = (event, name, value) => {
+    console.log(value);
+    console.log(options);
     return setOptions({
       ...options,
       [name]: value,
@@ -79,8 +80,8 @@ const Settings = ({ options, setOptions }) => {
                 marks
                 min={1}
                 max={4}
-                onChangeCommitted={(event) =>
-                  handleChangeSlider(event, "spacing")
+                onChangeCommitted={(event, value) =>
+                  handleChangeSlider(event, "spacing", value)
                 }
               />
               <Typography gutterBottom>Container size</Typography>
@@ -90,8 +91,8 @@ const Settings = ({ options, setOptions }) => {
                 marks
                 min={1}
                 max={3}
-                onChangeCommitted={(event) =>
-                  handleChangeSlider(event, "widthContainer")
+                onChangeCommitted={(event, value) =>
+                  handleChangeSlider(event, "widthContainer", value)
                 }
               />
             </Grid>
@@ -105,8 +106,8 @@ const Settings = ({ options, setOptions }) => {
                 marks
                 min={options.widthContainer === 1 ? 2 : 1}
                 max={4}
-                onChangeCommitted={(event) =>
-                  handleChangeSlider(event, "columns")
+                onChangeCommitted={(event, value) =>
+                  handleChangeSlider(event, "columns", value)
                 }
               />
               <FormControl className={classes.formControl} fullWidth={true}>
