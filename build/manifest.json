@@ -1,0 +1,18 @@
+{
+  "name": "Start page",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Start page for browser",
+  "author": "ax.mdt",
+  "permissions": ["storage"],
+  "icons": {
+    "16": "favicon-16x16.png",
+    "48": "logo192.png",
+    "128": "logo192.png"
+  },
+
+  "chrome_url_overrides": {
+    "newtab": "./index.html"
+  },
+  "startup_pages": ["./index.html"]
+}
