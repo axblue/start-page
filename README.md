@@ -2,4 +2,4 @@
 
 Start page for google chrome
 
-<img src="https://pasteboard.co/JQ2L5Qo7.gif"/>
+<img src="https://i.ibb.co/JdpYBJM/start-page.gif"/>
