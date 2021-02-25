@@ -2,4 +2,4 @@
 
 Start page for google chrome
 
-![image](https://ibb.co/LPgTk72)
+![image](https://pasteboard.co/JQ2L5Qo7.gif)
